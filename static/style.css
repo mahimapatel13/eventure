@@ -1,0 +1,29 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+:root{
+    --text-color: #fff;
+    --main-color: #514e61
+
+    --h1-font: 5.5rem;
+    --p-font: 1rem;
+}
+
+  /* Prevent horizontal overflow in the whole body */
+  body {
+    overflow-x: hidden;
+}
+
+/* Set up Swiper container and slide *
