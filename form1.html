@@ -11,45 +11,212 @@
 </head>
 <body>
     <section class="bg-[#1b263b] min-h-screen flex items-center justify-center">
-        <div class="bg-[#778da9] flex flex-col rounded-2xl shadow-xl max-w-3xl p-5 items-center">
-            <h1 class="font-bold text-xl text-white mb-8">Let's personalise your Eventure experience :)</h1>
+        <div class="bg-[#fff] flex flex-col rounded-2xl shadow-xl w-[600px]  max-w-3xl p-5 items-center text-[#1b263b]">
+            <h1 class="font-bold text-xl  text-[#1b263b] mb-8">Let's personalise your Eventure experience :)</h1>
             <div id="name-question" class="w-full">
-                <label for="name-input" class="text-white font-bold mb-2">What is your name?</label>
-                <input type="text" id="name-input" class="rounded-lg px-4 py-2 w-full" placeholder="Enter your name">
-                <button id="name-next" class="bg-white text-[#1b263b] font-bold py-2 px-4 rounded-lg mt-4 hover:bg-[#1b263b] hover:text-white transition-colors duration-300">Next</button>
+
+                <!-- name input -->
+                <label for="name-input" class=" text-[#1b263b] font-bold mb-2">What is your name?</label>
+                <input type="text" id="name-input" class="rounded-lg px-4 py-2 w-full border border-gray-200" placeholder="Enter your name">
+                <button id="name-next" class="bg-[#1b263b] text-[#fff] font-bold py-2 px-4 rounded-lg mt-4 hover:bg-gray-300 hover:text-[#1b263b] transition-colors duration-300">Next</button>
+
+        
             </div>
-            <div id="description-question" class="w-full hidden">
-                <label for="description-input" class="text-white font-bold mb-2">How would you describe yourself?</label>
-                <div class="flex flex-wrap justify-center gap-4 mt-4">
-                    <div class="bg-white rounded-lg px-4 py-2 hover:bg-[#1b263b] hover:text-white transition-colors duration-300 cursor-pointer">Adventurous</div>
-                    <div class="bg-white rounded-lg px-4 py-2 hover:bg-[#1b263b] hover:text-white transition-colors duration-300 cursor-pointer">Curious</div>
-                    <div class="bg-white rounded-lg px-4 py-2 hover:bg-[#1b263b] hover:text-white transition-colors duration-300 cursor-pointer">Laid-back</div>
-                    <div class="bg-white rounded-lg px-4 py-2 hover:bg-[#1b263b] hover:text-white transition-colors duration-300 cursor-pointer">Ambitious</div>
+            <div id="purpose-question" class="w-full hidden">
+                <label for="purpose-input" class="text-[#1b263b] font-bold mb-2 px-4 text-lg">Your are here to..?</label>
+                <div class="grid grid-cols-2 gap-4 mt-4">
+                    <!-- attend events  -->
+                    <div class="bg-white text-[#1b263b] font-semibold rounded-lg px-4 py-2 hover:bg-blackcursor-pointer flex flex-col items-center justify-center transition-all duration-[600ms] hover:translate-y-[-5px] hover:text-[#778da9]" data-purpose="attend" id="attendEvents" name="attendEvents">
+                        <img src="static/img/samantha-gades-fIHozNWfcvs-unsplash.jpg" alt="Attend Events" class="mb-2">
+                        Attend events
+                    </div>
+
+                    <!-- organise events  -->
+                    <div class="bg-white text-[#1b263b] font-semibold rounded-lg px-4 py-2 hover:bg-blackcursor-pointer flex flex-col items-center justify-center transition-all duration-[600ms] hover:translate-y-[-5px] hover:text-[#778da9]" data-purpose="organize" id="organiseEvents" name="organiseEvents" >
+                        <img src="static/img/organise.jpg" alt="Attend Events" class="mb-2">
+                        Organise events
+                    </div>
+
+                    <!-- both attend and organise events  -->
+                    <div class="bg-white text-[#1b263b] font-semibold rounded-lg px-4 py-2 hover:bg-blackcursor-pointer flex flex-col items-center justify-center transition-all duration-[600ms] hover:translate-y-[-5px] hover:text-[#778da9] col-span-2" data-purpose="both" id="both" name="both" >
+                        <img src="static/img/both.jpg" class="mb-2 h-[150px]">
+                        Both!
+                    </div>
                 </div>
+            </div>
+
+
+            <!-- what kind of events do u wish to be a part of?  -->
+            <div id="attend-events-question" class="w-full hidden">
+                <label for="attend-events-input" class="text-[#1b263b] font-bold mb-2 px-4 text-lg">What kind of events do you wish to be a part of?</label>
+                <div class="grid grid-cols-2 gap-4 mt-4">
+
+                    <!-- career-development  -->
+                    <div class="bg-white text-[#1b263b] font-semibold rounded-lg px-4 py-2 hover:bg-blackcursor-pointer flex flex-col items-center justify-center transition-all duration-[600ms] hover:translate-y-[-5px] hover:text-[#778da9]" data-purpose="career-development" id="career-development" name="career-development" >
+                        <img src="static/img/career-development.jpg" class="mb-2">
+                        Career Development
+                    </div>
+
+                    <!-- community-service  -->
+                    <div class="bg-white text-[#1b263b] font-semibold rounded-lg px-4 py-2 hover:bg-blackcursor-pointer flex flex-col items-center justify-center transition-all duration-[600ms] hover:translate-y-[-5px] hover:text-[#778da9]" data-purpose="community-service" id="community-service" name="community-service" >
+                        <img src="static/img/community-service.jpg" class="mb-2">
+                        Community Service
+                    </div>
+
+                    <!-- music-events  -->
+                    <div class="bg-white text-[#1b263b] font-semibold rounded-lg px-4 py-2 hover:bg-blackcursor-pointer flex flex-col items-center justify-center transition-all duration-[600ms] hover:translate-y-[-5px] hover:text-[#778da9]" data-purpose="music-events" id="music-events" name="music-events" >
+                        <img src="static/img/music-events.jpg" class="mb-2">
+                        Music Events
+                    </div>
+
+                    <!-- spiritual-gatherings  -->
+                    <div class="bg-white text-[#1b263b] font-semibold rounded-lg px-4 py-2 hover:bg-blackcursor-pointer flex flex-col items-center justify-center transition-all duration-[600ms] hover:translate-y-[-5px] hover:text-[#778da9]" data-purpose="spiritual-gatherings" id="spiritual-gatherings" name="spiritual-gatherings" >
+                        <img src="static/img/spiritual-gatherings.jpg" class="mb-2">
+                        Spiritual Gatherings
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- what type pf events do u organise?  -->
+            <div id="organize-events-question" class="w-full hidden">
+                <label for="organize-events-input" class="text-[#1b263b] font-bold mb-2 px-4">What type of events do you organize?</label>
+                <div class="grid grid-cols-2 gap-4 mt-4">
+
+                    <!-- educational  -->
+                    <div class="bg-white text-[#1b263b] font-semibold rounded-lg px-4 py-2 hover:bg-blackcursor-pointer flex flex-col items-center justify-center transition-all duration-[600ms] hover:translate-y-[-5px] hover:text-[#778da9]" data-purpose="educational" id="educational" name="educational" >
+                        <img src="static/img/education.jpg" alt="Attend Events" class="mb-2">
+                        Educational
+                    </div>
+
+                    <!-- musical  -->
+                    <div class="bg-white text-[#1b263b] font-semibold rounded-lg px-4 py-2 hover:bg-blackcursor-pointer flex flex-col items-center justify-center transition-all duration-[600ms] hover:translate-y-[-5px] hover:text-[#778da9]" data-purpose="musical" id="musical" name="musical" >
+                        <img src="static/img/music-events.jpg" class="mb-2">
+                        Musical
+                    </div>
+
+                    <!-- spiritual  -->
+                    <div class="bg-white text-[#1b263b] font-semibold rounded-lg px-4 py-2 hover:bg-blackcursor-pointer flex flex-col items-center justify-center transition-all duration-[600ms] hover:translate-y-[-5px] hover:text-[#778da9]" data-purpose="spiritual" id="spiritual" name="spiritual" >
+                        <img src="static/img/spiritual-gatherings.jpg" class="mb-2">
+                        Spiritual
+                    </div>
+
+                    <!-- skill-development  -->
+                    <div class="bg-white text-[#1b263b] font-semibold rounded-lg px-4 py-2 hover:bg-blackcursor-pointer flex flex-col items-center justify-center transition-all duration-[600ms] hover:translate-y-[-5px] hover:text-[#778da9]" data-purpose="skill-development" id="skill-development" name="skill-development" >
+                        <img src="static/img/career-development.jpg" class="mb-2">
+                        Skill Development
+                    </div>
+                </div>
+               
+            </div>
+            <div id="city-question" class="w-full hidden">
+
+                <!-- city input  -->
+                <label for="city-input" class="text-[#1b263b] font-bold mb-2  ">Your city</label>
+                <select id="city-input" class="rounded-lg px-4 py-2 w-full border border-gray-200">
+                    <option value="">Select your city</option>
+                    <option value="delhi">Delhi</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="bangalore">Bangalore</option>
+                    <option value="chennai">Chennai</option>
+                    <option value="kolkata">Kolkata</option>
+                </select>
+                <button id="city-next" class="bg-[#1b263b] text-[#fff] font-bold py-2 px-4 rounded-lg mt-4 hover:bg-gray-300 hover:text-[#1b263b] transition-colors duration-300">Next</button>
             </div>
         </div>
     </section>
 
     <script>
         const nameQuestion = document.getElementById('name-question');
-        const descriptionQuestion = document.getElementById('description-question');
+        const purposeQuestion = document.getElementById('purpose-question');
+        const attendEventsQuestion = document.getElementById('attend-events-question');
+        const organizeEventsQuestion = document.getElementById('organize-events-question');
+        const cityQuestion = document.getElementById('city-question');
+
         const nameInput = document.getElementById('name-input');
         const nameNextBtn = document.getElementById('name-next');
+
+        const purposeOptions = document.querySelectorAll('#purpose-question .bg-white');
+        const attendEventsOptions = document.querySelectorAll('#attend-events-question .bg-white');
+        const organizeEventsOptions = document.querySelectorAll('#organize-events-question .bg-white');
+        const cityInput = document.getElementById('city-input');
+        const cityNextBtn = document.getElementById('city-next');
+
+        let selectedEventTypes = [];
 
         nameNextBtn.addEventListener('click', () => {
             const name = nameInput.value.trim();
             if (name) {
                 nameQuestion.classList.add('hidden');
-                descriptionQuestion.classList.remove('hidden');
+                purposeQuestion.classList.remove('hidden');
             }
         });
 
-        const descriptionOptions = document.querySelectorAll('#description-question .bg-white');
-        descriptionOptions.forEach(option => {
+        purposeOptions.forEach(option => {
             option.addEventListener('click', () => {
-                // Your logic for handling the selected description goes here
-                console.log(`You selected: ${option.textContent}`);
+                const purpose = option.getAttribute('data-purpose');
+                if (purpose === 'attend') {
+                    purposeQuestion.classList.add('hidden');
+                    attendEventsQuestion.classList.remove('hidden');
+
+                    attendEventsOptions.forEach(option => {
+                        option.addEventListener('click', () => {
+                            const attendEvents = option.getAttribute('data-purpose');
+                            
+                            attendEventsQuestion.classList.add('hidden');
+                            cityQuestion.classList.remove('hidden');
+                            
+                        });
+                    });
+            
+                } else if (purpose === 'organize') {
+                    purposeQuestion.classList.add('hidden');
+                    organizeEventsQuestion.classList.remove('hidden');
+
+                    organizeEventsOptions.forEach(option => {
+                        option.addEventListener('click', () => {
+                            const organizeEvents = option.getAttribute('data-purpose');
+                            
+                            organizeEventsQuestion.classList.add('hidden');
+                            cityQuestion.classList.remove('hidden');
+                            
+                        });
+                    });
+                } else {
+                    purposeQuestion.classList.add('hidden');
+                    attendEventsQuestion.classList.remove('hidden');
+
+                    attendEventsOptions.forEach(option => {
+                        option.addEventListener('click', () => {
+                            const attendEvents = option.getAttribute('data-purpose');
+                            
+                            attendEventsQuestion.classList.add('hidden');
+                            organizeEventsQuestion.classList.remove('hidden');
+                            
+                        });
+                    });
+
+                      
+                    organizeEventsOptions.forEach(option => {
+                        option.addEventListener('click', () => {
+                            const organizeEvents = option.getAttribute('data-purpose');
+                            
+                            organizeEventsQuestion.classList.add('hidden');
+                            cityQuestion.classList.remove('hidden');
+                            
+                        });
+                    });
+
+                }
             });
+        });
+
+        cityNextBtn.addEventListener('click', () => {
+            const selectedCity = cityInput.value;
+            if (selectedCity) {
+                // Your logic for handling the selected city goes here
+                console.log(`You selected: ${selectedCity}`);
+            }
         });
     </script>
 </body>
