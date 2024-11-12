@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eventure-Event Discovery Website</title>
+    <title>Eventure - Event Discovery Website</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="./static/style-deep.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="icon" href="static/img/eventure.png">
 
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
@@ -15,9 +16,11 @@
 
 </head>
 <body>
+
+  <!-- navbar stat  -->
     <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#"><span class="text-warning">EVENT</span>URE</a>
+            <a class="navbar-brand" href="#"><span class="text-warning">EVENT</span >URE</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -41,66 +44,254 @@
         </div>
     </nav>
    
-    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+    <!-- navbar end   -->
+    <div>
+      <div class="c-container container">
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade " data-bs-ride="carousel" data-bs-interval="3000">
+          <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner ">
+              <div class="carousel-item active ">
+                  <img src="static/img/car1.jpg" class="d-block car" alt="...">
+                  <div class="carousel-caption">
+                      <h5>Music Festival</h5>
+                      <p>Music Brings people together, So when you are coming to this show.</p>
+                      <p><a href="#" class="btn btn-warning mt-3">Learn more</a></p>
+                  </div>
+              </div>
+              <div class="carousel-item ">
+                  <img src="static/img/music-events.jpg" class="d-block car " alt="...">
+                  <div class="carousel-caption">
+                      <h5>Workshop</h5>
+                      <p>Workshop gave us the practical knowledge about things, Fast grab Your Seats</p>
+                      <p><a href="#" class="btn btn-warning mt-3">Learn more</a></p>
+                  </div>
+              </div>
+              <div class="carousel-item ">
+                  <img src="static/img/music-events.jpg" class="d-block car " alt="...">
+                  <div class="carousel-caption">
+                      <h5>Social Gathering</h5>
+                      <p>Social gathering increases knowledge of ourselves. This helps us socialize.</p>
+                      <p><a href="#" class="btn btn-warning mt-3">Learn more</a></p>
+                  </div>
+              </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>   
         </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="static/img/car1.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption">
-                    <h5>Music Festival</h5>
-                    <p>Music Brings people together, So when you are coming to this show.</p>
-                    <p><a href="#" class="btn btn-warning mt-3">Learn more</a></p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="static/img/music-events.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption">
-                    <h5>Workshop</h5>
-                    <p>Workshop gave us the practical knowledge about things, Fast grab Your Seats</p>
-                    <p><a href="#" class="btn btn-warning mt-3">Learn more</a></p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="static/img/samantha-gades-fIHozNWfcvs-unsplash.jpg" class="d-block w-140" alt="...">
-                <div class="carousel-caption">
-                    <h5>Social Gathering</h5>
-                    <p>Social gathering increases knowledge of ourselves. This helps us socialize.</p>
-                    <p><a href="#" class="btn btn-warning mt-3">Learn more</a></p>
-                </div>
-            </div>
+      
+        <div class=" text-white overlay ">
+          <div clas="col-md-4" s> <p>Looking for</p>   
+              <select id="inputState" class="form-select">
+                  <option selected>Choose event type</option>
+                  <option>...</option>
+                </select>         
+          </div>
+          <div class="col-md-4"><p>Location</p>
+            <select id="inputState" class="form-select">
+              <option selected>Choose location</option>
+              <option>...</option>
+            </select> 
+          </div>
+          <div><p>When</p>
+            <select id="inputState" class="form-select">
+              <option selected>Choose date and time</option>
+              <option>...</option>
+            </select> 
+          </div>
+          <div class="bg-blue-400">
+            <i class="fas fa-search p-5"></i>
+          </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-        
-          
-          
+    </div>
     </div>
     
  <!-- overlay div -->
-    <div class="bg-black text-white rounded p-4- overlay">
-        <div clas="col-md-1 w-[10px]" s> <p>Looking for</p>   
-            <select id="inputState" class="form-select">
-                <option selected>Choose...</option>
-                <option>...</option>
-              </select>         
-        </div>
-        <div>Location</div>
-        <div>When</div>
-        <div><i class="fas fa-search"></i></div>
-    </div>
-      
     
-    <section id="about" class="about section-padding">
+    <div class="upcoming-events">
+      <div class="upcoming-events-text"> <h2>
+        Upcoming Events
+      </h2>
+      </div>
+
+
+      <div>
+         
+      </div>
+    <div>
+    
+
+      
+    <div class="line">
+      
+      </div>
+      <br>
+      <br>
+
+
+      <div class="container">
+        <div class="card__container">
+           <article class="card__article">
+              <img src="static/img/card1.jpg" alt="image" class="card__img">
+
+              <div class="card__data">
+                 <h3 class="card__title">Elegant <br> Queen Bee</h3>
+                 <span class="card__price">$5999</span>
+              </div>
+
+              <img src="static/img/BAN2.png" alt="image" class="card__bg">
+              
+              <a href="#" class="card__button">
+                 View More <i class="ri-arrow-right-line"></i>
+              </a>
+           </article>
+
+           <article class="card__article">
+              <img src="static/img/insect-2.png" alt="image" class="card__img">
+
+              <div class="card__data">
+                 <h3 class="card__title">Mechanical Magic <br> Butterfly</h3>
+                 <span class="card__price">$3999</span>
+              </div>
+
+              <img src="static/img/cardbg.jpg" alt="image" class="card__bg">
+
+              <a href="#" class="card__button">
+                 View More <i class="ri-arrow-right-line"></i>
+              </a>
+           </article>
+
+           <article class="card__article">
+              <img src="static/img/insect-3.png" alt="image" class="card__img">
+
+              <div class="card__data">
+                 <h3 class="card__title">Wonderful <br> Flower Beetle</h3>
+                 <span class="card__price">$8999</span>
+              </div>
+
+              <img src="static/img/bg-card.png" alt="image" class="card__bg">
+
+              <a href="#" class="card__button">
+                 View More <i class="ri-arrow-right-line"></i>
+              </a>
+           </article>
+        </div>
+     </div>
+    
+     <div class="container b-container">
+      <img class="banner" src="static/img/BAN3.png"  alt="">
+    </div>
+    
+    <!-- HTML for the 3x2 Grid of Event Cards -->
+<div class="container ">
+
+  <!-- Event Card 1 -->
+  <div class="event-card">
+    <div class="event-image-container">
+      <img src="static/img/career-development.jpg" alt="Event Image 1" class="event-image">
+      <div class="event-status">Free</div>
+    </div>
+    <div class="event-info">
+      <h3 class="event-title">Session of Cybersecurity | Learn about the emerging career path  </h3>
+      <p class="event-date-time">12 Dec 2024 | 6:00 PM</p>
+      <p class="event-mode">Online</p>
+    </div>
+  </div>
+
+  <!-- Event Card 2 -->
+  <div class="event-card">
+    <div class="event-image-container">
+      <img src="static/img/community-service.jpg" alt="Event Image 2" class="event-image">
+      <div class="event-status">Paid</div>
+    </div>
+    <div class="event-info">
+      <h3 class="event-title">Volunteer for Navgo Foundation - Join us in our Beach Cleaning Drive</h3>
+      <p class="event-date-time">15 Dec 2024 | 2:00 PM</p>
+      <p class="event-mode">In Person</p>
+    </div>
+  </div>
+
+  <!-- Event Card 3 -->
+  <div class="event-card">
+    <div class="event-image-container">
+      <img src="static/img/education.jpg" alt="Event Image 3" class="event-image">
+      <div class="event-status">Free</div>
+    </div>
+    <div class="event-info">
+      <h3 class="event-title">Author Meetup - Meet fellow Amaeteur Authors</h3>
+      <p class="event-date-time">18 Dec 2024 | 5:30 PM</p>
+      <p class="event-mode">Online</p>
+    </div>
+  </div>
+
+  <!-- Event Card 4 -->
+  <div class="event-card">
+    <div class="event-image-container">
+      <img src="static/img/music-events.jpg" alt="Event Image 4" class="event-image">
+      <div class="event-status">Paid</div>
+    </div>
+    <div class="event-info">
+      <h3 class="event-title">Swifties Hour: A Swiftie Meetup at DB Mall</h3>
+      <p class="event-date-time">20 Dec 2024 | 4:00 PM</p>
+      <p class="event-mode">In Person</p>
+    </div>
+  </div>
+
+  <!-- Event Card 5 -->
+  <div class="event-card">
+    <div class="event-image-container">
+      <img src="static/img/samantha-gades-fIHozNWfcvs-unsplash.jpg" alt="Event Image 5" class="event-image">
+      <div class="event-status">Free</div>
+    </div>
+    <div class="event-info">
+      <h3 class="event-title">Open Mic | Standup, Poetry, Singing and More! Sign Up Now</h3>
+      <p class="event-date-time">25 Dec 2024 | 7:00 PM</p>
+      <p class="event-mode">Online</p>
+    </div>
+  </div>
+
+  <!-- Event Card 6 -->
+  <div class="event-card">
+    <div class="event-image-container">
+      <img src="static/img/spiritual-gatherings.jpg" alt="Event Image 6" class="event-image">
+      <div class="event-status">Paid</div>
+    </div>
+    <div class="event-info">
+      <h3 class="event-title">Yoga and Meditation BootCamp at Vaibhav Sundri Park | Free Bootcamp</h3>
+      <p class="event-date-time">28 Dec 2024 | 3:00 PM</p>
+      <p class="event-mode">In Person</p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <img class="banner" src="static/img/BAN3.png"  alt="">
+</div>
+
+
+      
+  <br><br><br><br>
+
+      <div class="nav-section">
+        <p>
+          hi
+        </p>
+        <p>
+          no
+        </p>
+      </div>
+  
+    <!-- <div id="about" class="about section-padding" >
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-12 col-12">
@@ -119,22 +310,7 @@
                 </div>
             </div>
         </div>
-    </section>
-
-        <div class="bg-black text-white rounded p-4- justify-between flex flex-row">
-            <div clas="col-md-1 w-[10px]" s> <p>Looking for</p>   
-                <select id="inputState" class="form-select">
-                    <option selected>Choose...</option>
-                    <option>...</option>
-                </select>         
-            </div>
-            <div>Location</div>
-            <div>When</div>
-            <div><i class="fas fa-search"></i></div>
-        </div>
-      
-    
- 
+      </div> -->
 
 <div class="flex flex-row">
   <div class="circle">
@@ -165,13 +341,6 @@
     <h6>Cultural Event</h6>
   </div>
 </div>
-
-
-
-
-
-
-
 
   <div class="cardwith">
    <h1 class="heading">Trending Events</h1>
@@ -248,11 +417,6 @@
     </div>
   </div>
 
-
-
-
-
-
   <h1 class="heading1">Customer Review</h1>
   <div class="shopping">
     <div class="box-content">
@@ -275,14 +439,7 @@
         <h4>Prayagraj &nbsp; &nbsp; &nbsp; 4.4*/5</h4>
         <button class="btn">Buy Now</button>
     </div>
-
-
-
-
-
-
-
-
+  </div>
 
 <div class="container mt-2 bg-slate-500">
   <footer class="py-5">
